@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Project_Overview_Fundamentals
 {
@@ -14,7 +10,7 @@ namespace Project_Overview_Fundamentals
 
         public void MostrarDatos()
         {
-            Console.WriteLine($"Los datos de la persona son:{Nombre} y {Edad}");
+            Console.WriteLine($"Los datos de la persona son:{Nombre} y {Edad} años");
         }
 
         public class Peter: Persona

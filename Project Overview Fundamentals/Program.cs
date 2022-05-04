@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using static Project_Overview_Fundamentals.Persona;
 
 namespace Project_Overview_Fundamentals
@@ -8,7 +7,6 @@ namespace Project_Overview_Fundamentals
     public enum diasSemana
     {
         Lunes, Martes, Miercoles, Jueves, Viernes
-
     }
     
     class Generic<TNombre, TEdad>
@@ -34,6 +32,7 @@ namespace Project_Overview_Fundamentals
     {
         static void Main(string[] args)
         {
+            
             //Classes and objects
             Console.WriteLine("Ingrese el tipo de animal:");
             var cat = new Animal();
@@ -53,7 +52,7 @@ namespace Project_Overview_Fundamentals
 
             //Interfaces
             Calculos calculos = new Calculos();
-            Console.WriteLine(calculos.Suma(5, 5));
+            Console.WriteLine("La sumatoria es: " + calculos.Suma(5, 5));
 
             //Enums
             diasSemana dias = diasSemana.Lunes;
