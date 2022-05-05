@@ -45,29 +45,25 @@ namespace Project_Overview_Fundamentals
             };
             Console.WriteLine(datosPersona);
             //Base classes
-            Peter peter = new Peter();
-            peter.Nombre = " Peter parker";
-            peter.Edad = 20;
+            var peter = new Peter
+            {
+                Nombre = " Peter parker",
+                Edad = 20
+            };
             peter.MostrarDatos();
 
             //Interfaces
-            Calculos calculos = new Calculos();
+            var calculos = new Calculos();
             Console.WriteLine("La sumatoria es: " + calculos.Suma(5, 5));
 
             //Enums
-            diasSemana dias = diasSemana.Lunes;
+            var dias = diasSemana.Lunes;
             Console.WriteLine(dias);
 
             //Nullable types
             int? numero = null;
-            if (numero.HasValue)
-            {
-                Console.WriteLine(numero);
-            }
-            else
-            {
-                Console.Write("No tiene ningun valor.");
-            }
+            string print = (numero.HasValue) ? $"El valor es {numero}" : "Su valor es null";
+            Console.WriteLine(print);
         }
     }
 }
